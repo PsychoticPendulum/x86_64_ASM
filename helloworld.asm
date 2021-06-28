@@ -1,3 +1,6 @@
+; prints "Hello World!" to the screen
+; nasm -f elf64 helloworld.asm && ld helloworld.o -o helloworld && ./helloworld
+
 section .data
 	msg:		db		"Hello World!", 0xa
 	msg_len:	equ		$-msg
